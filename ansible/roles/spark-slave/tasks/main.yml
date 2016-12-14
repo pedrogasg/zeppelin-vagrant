@@ -1,0 +1,4 @@
+---
+
+- name: Launch slave
+  command: /opt/spark/spark-2.0.0-bin-hadoop2.7/sbin/start-slave.sh spark://192.168.56.50:7077 -h "{{ hostvars[inventory_hostname]['ansible_all_ipv4_addresses'][1] }}"

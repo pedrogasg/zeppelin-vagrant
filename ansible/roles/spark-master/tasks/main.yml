@@ -1,0 +1,4 @@
+---
+
+- name: Launch master
+  command: /opt/spark/spark-2.0.0-bin-hadoop2.7/sbin/start-master.sh

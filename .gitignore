@@ -1,0 +1,4 @@
+/.vagrant/
+**/*.retry
+common.cab
+.DS_Store

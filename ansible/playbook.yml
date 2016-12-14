@@ -1,0 +1,14 @@
+- hosts: zeppelin-with-spark
+  roles:
+    - { role: java }
+    - { role: spark }
+    - { role: spark-master }
+    - { role: zeppelin }
+  become: true
+
+- hosts: spark-slave
+  roles:
+    - { role: java }
+    - { role: spark }
+    - { role: spark-slave }
+  become: true
